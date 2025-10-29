@@ -6,8 +6,9 @@ const { create, getAll, getMine, delPost, likePost, addComment, editPost } = req
 const { uploadImage } = require("../controller/upload");
 const verify = require("../middleware/authMiddleware");
 
-router.get("/",()=>{
+router.get("/",(req,res)=>{
     console.log("hello backend");
+    return res.send("ok");
 })
 // User routes
 router.post("/auth/signup", user.reg);
