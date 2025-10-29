@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://social-media-clone-e5r8.onrender.com',
         changeOrigin: true,
       }
     }

@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cookieParser());
 app.use(cors({
-  origin: "http://localhost:5173", // frontend URL
+  origin: "https://social-media-2848.netlify.app/", // frontend URL
   credentials: true,
 }));
 app.use(express.json());
